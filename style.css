@@ -1,0 +1,162 @@
+body,
+html {
+    background: #235d59;
+    background: -moz-linear-gradient(top, #235d59 0%, #81c4c0 100%);
+    background: -webkit-linear-gradient(top, #235d59 0%,#81c4c0 100%);
+    background: linear-gradient(to bottom, #235d59 0%,#81c4c0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#235d59', endColorstr='#81c4c0',GradientType=0 );
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.snow {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.snowman {
+    z-index: 1;
+    position: absolute;
+    bottom: 2%;
+    left: 12%;
+    zoom: 0.4;
+    transform-origin: bottom;
+    -webkit-animation: ROTATE 2s infinite; 
+    -moz-animation:    ROTATE 2s infinite; 
+    -o-animation:      ROTATE 2s infinite; 
+    animation:         ROTATE 2s infinite; 
+}
+
+.gingerbread {
+    position: absolute;
+    bottom: 6%;
+    right: 20%;
+    zoom: 0.4;  
+    -webkit-animation: ROTATE2 2s infinite; 
+    -moz-animation:    ROTATE2 2s infinite; 
+    -o-animation:      ROTATE2 2s infinite; 
+    animation:         ROTATE2 2s infinite;   
+}
+
+.house {
+    z-index: 1;
+    position: absolute;
+    bottom: 2%;
+    right: 46%;
+    zoom: 0.4;     
+}
+
+
+.container {
+    position: absolute;
+    top: 20%;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 600px;
+}
+
+.santa {
+    width: 218px;
+    margin: 0 auto;
+    zoom: 0.5;
+    transform-origin: center;
+    -webkit-animation: ROTATE2 2s infinite; 
+    -moz-animation:    ROTATE2 2s infinite; 
+    -o-animation:      ROTATE2 2s infinite; 
+    animation:         ROTATE2 2s infinite;
+}
+
+
+.hills {
+    background-image: url('img/hills.png');
+    width: 100%;
+    height: 147px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+h1, h2, p {
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.35);
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    color: #fff;
+    line-height: 60px;
+}
+
+h2 {
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #cdfff3;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+}
+
+.btn {
+    background-color: #235d59;
+    padding: 12px 40px;
+    border-radius: 50px;
+    margin: 25px auto;
+    text-align: center;
+    display: block;
+    width: 130px;
+    font-weight: 700;
+    font-family: 'Mountains of Christmas', cursive;
+    font-size: 20px;
+    color: #fff;
+    
+    transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+    /* background-color: #FF5A5A; */
+    transform: scale(1.1);
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+audio {display:none;}
+
+@-webkit-keyframes ROTATE {
+    0%   { transform: rotate(-5deg); }
+    50%  { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+
+@-webkit-keyframes ROTATE2 {
+    0%   { transform: rotate(5deg); }
+    50%  { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+}
