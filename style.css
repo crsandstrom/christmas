@@ -13,6 +13,11 @@ html {
 }
 
 
+#promo {
+    height: 1024px;
+    width: 100%;
+}
+
 .snow {
   height: 100%;
   position: absolute;
@@ -24,7 +29,7 @@ html {
     position: absolute;
     bottom: 2%;
     left: 12%;
-    zoom: 0.4;
+    width: 104px;
     transform-origin: bottom;
     -webkit-animation: ROTATE 2s infinite; 
     -moz-animation:    ROTATE 2s infinite; 
@@ -32,29 +37,48 @@ html {
     animation:         ROTATE 2s infinite; 
 }
 
+.snowman img {
+    width: 104px;
+}
+
 .gingerbread {
     position: absolute;
-    bottom: 6%;
+    bottom: 5%;
     right: 20%;
-    zoom: 0.4;  
+    width: 152px;  
+    transform-origin: bottom;
     -webkit-animation: ROTATE2 2s infinite; 
     -moz-animation:    ROTATE2 2s infinite; 
     -o-animation:      ROTATE2 2s infinite; 
     animation:         ROTATE2 2s infinite;   
 }
 
+.gingerbread img {
+    width: 152px;
+}
+
 .house {
     z-index: 1;
     position: absolute;
     bottom: 2%;
-    right: 46%;
-    zoom: 0.4;     
+    right: 43%;
+    width: 250px;     
+    
+    -webkit-animation: PULSE 2s infinite; 
+    -moz-animation:    PULSE 2s infinite; 
+    -o-animation:      PULSE 2s infinite; 
+    animation:         PULSE 2s infinite;
+}
+
+.house img {
+    width: 250px;
 }
 
 
 .container {
-    position: absolute;
-    top: 20%;
+    top: 15vh;
+    
+    position: relative;
     left: 0; 
     right: 0; 
     margin-left: auto; 
@@ -62,15 +86,22 @@ html {
     width: 600px;
 }
 
+.container p {
+    margin: 8px 40px;
+}
+
 .santa {
-    width: 218px;
+    width: 109px;
     margin: 0 auto;
-    zoom: 0.5;
     transform-origin: center;
     -webkit-animation: ROTATE2 2s infinite; 
     -moz-animation:    ROTATE2 2s infinite; 
     -o-animation:      ROTATE2 2s infinite; 
     animation:         ROTATE2 2s infinite;
+}
+
+.santa img {
+    width: 109px;
 }
 
 
@@ -88,9 +119,6 @@ h1, h2, p {
     text-shadow: 1px 1px 0px rgba(0,0,0,0.35);
 }
 
-p {
-    text-align: center;
-}
 
 h1 {
     font-family: 'Mountains of Christmas', cursive;
@@ -104,7 +132,7 @@ h1 {
 
 h2 {
     font-family: 'Mountains of Christmas', cursive;
-    font-size: 30px;
+    font-size: 34px;
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: 700;
@@ -113,11 +141,12 @@ h2 {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 16px;
     font-weight: 400;
     color: #fff;
-    line-height: 24px;
+    line-height: 22px;
+    letter-spacing: -0.1px;
 }
 
 .btn {
@@ -159,4 +188,10 @@ audio {display:none;}
     0%   { transform: rotate(5deg); }
     50%  { transform: rotate(-5deg); }
     100% { transform: rotate(5deg); }
+}
+
+@-webkit-keyframes PULSE {
+    0%   { transform: scale(1,1); }
+    50%  { transform: scale(0.95,0.95); }
+    100% { transform: scale(1,1); }
 }

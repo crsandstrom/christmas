@@ -7,13 +7,14 @@
         <title>ComeOn Christmas</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas:400,700|Open+Sans:400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
         <script src="snow.js"></script>
     </head>
     <body>
         
-
         <canvas id="snow" class="snow"></canvas>
-
         <script >var canvas = document.getElementById('snow'),
     ctx = canvas.getContext('2d'),
     width = ctx.canvas.width = document.body.offsetWidth,
@@ -91,39 +92,41 @@ loop();
 //# sourceURL=pen.js
 </script>
         
-        <div class="snowman">
-            <img src="img/snowman.png">
-        </div>
+        <div id="promo">
+            
+            
         
-        <div class="gingerbread">
-            <img src="img/gingerbread.png">
-        </div>
+            <div class="snowman"><img src="img/snowman.png"></div>
+            <div class="gingerbread"><img src="img/gingerbread.png"></div>
+            <div class="house"><img src="img/house.png"></div>
         
-        <div class="house">
-            <img src="img/house.png">
-        </div>
-        
-        
-        
-        <div class="container">
-            <div class="santa">
-                <img src="img/santa.png">
+            <div class="container">
+            
+                <div class="santa"><img src="img/santa.png"></div>
+            
+                <h1>Howdy, howdy ho!</h1>
+
+                <p>We just got notice from Santa, that ComeOn employees have been
+                properly eating their porridge, and been nice most of the year!</p>
+                <p>We have been so nice that he will visit us even before Christmas day!<br>So, if you want to partake in this jolly event, please save the date!</p>
+
+                
+                <h2>15th December!</h2>
+                
+                <p>Santa Claus needs you to RSVP to the event you'll recieve shortly.</p>
+
+            
+                <!--<a class="btn" href="https://calendar.google.com/calendar/hosted/comeon.com/event?action=TEMPLATE&tmeid=Xzc0czNjZ3BtNjRwMzZiYTQ2MHIzMGI5azcwbzMyYmEyNjRwNDJiYTE2a3M0MmdpNThsMGpnZ3EyNmMgY2xhZXMuc2FuZHN0cm9tQGNvbWVvbi5jb20&tmsrc=claes.sandstrom%40comeon.com">SAVE THE DATE</a>-->
+            
             </div>
-            <h1>Heydy, heydy ho!</h1>
-
-            <p>We just got notice from Santa, that ComeOn employees have been
-properly eating their porridge, and been nice most of the year!<br><br>
-We have been so nice that he will visit us even before Christmas day!
-So, if you want to partake in this jolly event, please save the date!</p>
-                        <h2>15th December!</h2>
-            <a class="btn" href="https://calendar.google.com/calendar/hosted/comeon.com/event?action=TEMPLATE&tmeid=Xzc0czNjZ3BtNjRwMzZiYTQ2MHIzMGI5azcwbzMyYmEyNjRwNDJiYTE2a3M0MmdpNThsMGpnZ3EyNmMgY2xhZXMuc2FuZHN0cm9tQGNvbWVvbi5jb20&tmsrc=claes.sandstrom%40comeon.com">SAVE THE DATE</a>
+            
+            <div class="hills"></div>
             
         </div>
 
         
             
-        <div class="hills">
-        </div>
+            
         
         <audio autoplay="autoplay" controls="none" loop="">
 	       <source src="music.ogg">
