@@ -241,3 +241,38 @@ audio {display:none;}
     .snowman {width: 75px; bottom: 2%;}
     .snowman img {width: 75px;}
 }
+
+@media (max-width:375px) {
+    
+h1 {font-size: 40px; margin-top: 10px;}
+.container p {font-size: 16px; line-height: 20px; margin: 8px 0px;}
+    
+.container {top: 6%; margin: 0 15px; width: auto;}
+    
+.santa {width: 100px; }
+.santa img {width: 100px;}
+.gingerbread {display: none;}
+.house {display: none;}
+.snowman {display: none;}
+    
+}
+
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+.body,.html {overflow: visible; height: auto;}
+h1 {margin-top: 0px;}
+p {font-size: 16px; line-height: 22px;}
+.santa {display: none;}
+.gingerbread {display: none;}
+.house {display: none;}
+.snowman {display: none;}
+.hills {display: none;}
+      
+}
+
